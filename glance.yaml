@@ -1,0 +1,10 @@
+services:
+  glance:
+    container_name: glance
+    image: glanceapp/glance
+    volumes:
+      - "/mnt/harddrive/glance:/app/config"
+    ports:
+      - "8081:8080"
+    restart: unless-stopped
+
