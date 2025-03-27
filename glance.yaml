@@ -2,6 +2,7 @@ services:
   glance:
     container_name: glance
     image: glanceapp/glance
+    user: "1000"
     volumes:
       - "/mnt/harddrive/glance:/app/config"
     ports:

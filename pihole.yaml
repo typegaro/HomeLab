@@ -11,6 +11,8 @@ services:
       TZ: 'Europe/Rome'
       FTLCONF_webserver_api_password: '${PIHOLE_API_PASSWORD}'
       FTLCONF_dns_listeningMode: 'all'
+      PUID: "1000"
+      PGID: "1000"
     volumes:
       - /mnt/harddrive/pihole/config:/etc/pihole
       - /mnt/harddrive/pihole/dnsmasq.d:/etc/dnsmasq.d

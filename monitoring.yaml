@@ -22,7 +22,7 @@ services:
       - monitoring 
   prometheus: 
     image: prom/prometheus:latest 
-    user: "0" 
+    user: "1000" 
     environment: 
       - PUID=0 
       - PGID=0 
@@ -43,7 +43,7 @@ services:
       - monitoring 
   grafana: 
     image: grafana/grafana:latest 
-    user: "0" 
+    user: "1000" 
     container_name: grafana 
     ports: 
       - 3000:3000 
